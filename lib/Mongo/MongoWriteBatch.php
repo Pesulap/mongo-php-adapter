@@ -74,6 +74,14 @@ class MongoWriteBatch
     }
 
     /**
+     * getItemCount - return count operations
+     *
+     * @return int
+     */
+    public function getItemCount(){
+        return count($this->items);
+    }
+    /**
      * Adds a write operation to a batch
      *
      * @see http://php.net/manual/en/mongowritebatch.add.php
